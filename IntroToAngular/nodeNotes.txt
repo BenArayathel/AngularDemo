@@ -1,0 +1,25 @@
+Node.js 
+
+	Runtime environment for JavaScript. 
+	Takes the Chrome's B8 JavaScript engine. 
+		It allows us to execute JS code outside of a web browser and 
+		provides us a library of various JavaScript modules. 
+
+	When we install Node.js, it comes with tools such as npm. 
+
+npm - Node package manager. 
+
+	npm is a package manager for the JS programming language. 
+	Default package manager for the JS runtime environment - Node.js
+
+
+TypeScript 
+
+	Superset of JavaScript. (Can achieve the same functionality and more of JavaScript)
+	Supports strong and static typing 
+	Open-source and object-oriented programming language that supports classes, interfaces, 
+	inheritance and modules. (It's managed by Microsoft)
+
+
+
+

@@ -1,0 +1,78 @@
+Angular
+
+	Angular is a Typescript-based open source framework used to develop dynamic Single page application.
+
+	Angular is designed to create webpages for large enterprise application. 
+
+Angular vs AngularJS?
+
+	AngularJS came out on October, 2010
+	Angular 4 - March, 2017
+	Angular 9 - February, 2020
+
+	AgularJS is a JavaScript-based open source front-end web framework. It doesn't support the features of 
+	a server side programming language, nor dynamic loading of the page. 
+
+	Angular is a *complete rewrite* of AngularJS. Angular is build on *component hierarchy*.
+	AngularJS is based on *controllers* and *scopes*.
+
+AngularJS doesn't support mobiles 	vs Angular which supports mobiles
+Uses MVC architecture to build applications vs 	Angular is component based UI to build the application.
+
+
+	
+
+What is a Single Page Application? 
+	Application with a single page on the browser. All the necessary code; HTML, JavaScript and
+	CSS is retrieve by the browser with a single page load. 
+	So rather than navigating to multiple html pages, we can dynamically modify a single page. 
+
+Advantages of single page apps:
+	Fast and Responsive: SPA only updat the require elemnts/content, so the HTML CSS and JS are
+				only loaded once. This is significantly faster.
+	Caching capabilities: SPA can cache requsts locally, it can reuse the data and even work offline.
+			(with the data being synchronised with the server when possible). 
+
+The advantages of SPA lead to a more pleasent user experience. 
+
+Disadvantages os SPAs:
+	Data is frontloaded, the first page can load a little slower. (overall the performance is 
+		still better)
+	Doesn't perform as well with SEO, Search engine optimizations. 
+	Security, SPAs are little bit less secure towards Cross-site attacks. 
+
+
+Angular package structure:
+
+	package.json: It's a JSON file that exists at the root of a JS/node project.
+		It holds metadata relevant to the project. Used for managing the project's 
+		dependencies. 
+
+	tsconfig.json: It's a JSON file, that configures how Typescript is transpiled into
+		JavaScript. 
+
+	tslint.json: A file that configures what standards your code should follow. 
+
+	app.module.ts: Keeps track of all of your modules. 
+			(A module is basically a piece of code)
+
+	Webpack:
+		Used to bundle JavaScript modules into a single JavaScript file(s).
+		A module is just a file, one script is one module. Modules can be 
+		exported and imported by other modules. 
+
+Angular decorators:
+	Provides meta data for Angular.
+
+Angular Directives
+
+1. Structural directives: 
+	Modify the DOM layout by adding and removing DOM elements. *ngFor or *ngIf
+	(directives with an '*' are Strcutral directives)
+
+2. Attributive directives: 
+	Changing the appearance or behaviour of an element, component or another directive. 
+
+3. Component directives:
+	Defines a class to be a component.
+
