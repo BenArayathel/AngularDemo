@@ -1,0 +1,31 @@
+<!-- <app-todo></app-todo>
+<app-tofinish></app-tofinish>
+<app-component-name></app-component-name> -->
+
+<!-- We need to have a placeholder tag, something that can be any component tag we want it to be!-->
+
+
+
+<div>
+  <nav class = 'navbar navbar-default'>
+    <div class = 'container fluid'>
+      <a class = 'navbar-brand'>Hello</a>
+    </div>
+    <ul class = 'nav navbar-nav'>
+      <li class = 'nav-item'>
+        <a href = "/name/default">Name Component</a>
+        <a routerLink = '/name/default'>Name component but faster</a>
+      </li>
+      <li class = 'nav-item'>
+        <a href = "/todo">ToDo Component</a>
+        <a routerLink = '/todo'>ToDo component but faster</a>
+      </li>
+      <li class = 'nav-item'>
+        <a href = "/tofinish">tofinish Component</a>
+        <a routerLink = '/tofinish'>tofinish component but faster</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>

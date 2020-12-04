@@ -1,0 +1,37 @@
+
+<div> Welcome current user,  {{5+8 + currentUser}} !</div>
+
+<!-- 
+
+    The {{}} syntax is used for interpolation. Interpolation evaluates an expression. You can do simple operations. 
+    OR you can refer to variables from the TS file. We use interpolation to achieve one-way data binding. 
+
+
+-->
+
+<table class ='table'>
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>number of moons</th>
+            <th>Planet color</th>
+        </tr>
+    </thead>
+    <tbody *ngFor = 'let planet of planetList'>
+        <td>{{planet.name}}</td>
+        <td>{{planet.moons}}</td>
+        <td>{{planet.color}}</td>
+    </tbody>
+</table>
+<table class ='table'>
+
+    <thead>
+        <tr>
+            <th>Fruits</th>
+        </tr>
+    </thead>
+    <tbody *ngFor = 'let temp of fruitList'>
+        <td>{{temp}}</td>
+    </tbody>
+</table>

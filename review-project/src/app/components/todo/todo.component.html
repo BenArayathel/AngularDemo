@@ -1,0 +1,48 @@
+<!-- We need to use directives! -->
+<!-- Makes it easier to manipulate the DOM -->
+<!-- We want to use structural directives, this will create and delete DOM elements for us-->
+
+<h1>This is my random variable {{randomVariable}}</h1>
+
+<div *ngIf = 'toShow && pokeList.length'> <!-- ngIf checks an expression to see if it shows something-->
+    <ul *ngFor = 'let pokemon of pokeList' > <!-- *ngFor iterates through a list -->
+       <li MyAttribute [title] = 'pokemon.name'>{{pokemon.name}} </li> <!-- We've created a custom attribute 'MyAttribute' that will manipulate the bahaviour of the element-->
+    
+        <!-- <img [src] = 'pokemon.image' [style.width] = 'imageWidth'> -->
+    </ul>
+    <input type = "text" [(ngModel)]='randomVariable' placeholder="My Random Variable input ">
+</div>
+<!-- expression to be evaluated ? 'expression if true' : 'expression if false' -->
+<button (mouseenter) = 'toggleList()'>{{ toShow ? 'Hide':'Show' }}</button> <!-- We're going to take advantage of event binding-->
+<!--
+    Directives:
+
+        2 types: 
+                Structural directives (modify the DOM)
+                    *ngFor
+                    *ngIf
+                    *ngSwitch
+                Attribute directives (modify the bahviour )
+
+-->
+
+<!-- How would I achieve 2-way binding?
+   
+    One way binding (Interpolation): {{}}
+    Two way binding (ngModel) : [()]
+        The [()] syntax is used for 2-way binding. Also, referred to as "apple in the box". In the 2-way data binding 
+            the hrml values and TS values are tied to each other. If one changes, the other immediately reflect those changes. 
+            Hence, "2 way data binding."
+
+        To set up 2-way data binding you need ngModel, which is part of the FormsModule module. 
+
+    event binding (binding an event, possibly to a function) : ()
+        The () syntax is used for event binding. Event binding binds an HTML event to a typescript method. 
+
+        Event information will be sent from the HTML page to the TS method (a type of one way binding.
+
+    property binding : []
+        Property binding projects the values in TS to HTML attributes that will then operate as they normally do. 
+        Any changes to TS files will immediately effect the HTML attributes, but NOT the other way around. 
+
+-->
